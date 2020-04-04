@@ -1,0 +1,296 @@
+All the answers are solved in python 3.0 or above environment
+
+1. Create following Variables
+i) „mystring‟ to contain „hello‟
+ii) „myfloat‟ to contain „2.5‟
+iii) „myint‟ to contain „10‟
+
+Sol. 	>>>mystring = 'hello'
+	>>>myfloat = 2.5
+	>>>myint = 10
+
+2. Write the value justification
+i) 2*(3+4)
+ii) 2*3+4
+iii) 2+3*4
+
+Sol. This question might look different, but you got the right idea.
+We just need to lay the format exactly as shown in the calculation. 
+
+i)
+>>> (2*(3+4))
+ii)
+>>>((2*3)+4)
+iii)
+>>> (2+(3*4))
+** The calculation will occur inside-out(inner brackets first)
+
+3. What is the type of the following result:
+i) 1+2.0+3
+
+Sol. In actual the division is : int + float +int
+
+Fun thing about python is, that it detects the largest data type
+present in the equation and convert the corresponding one into that too
+
+So, when we execute this equation in python, it will convert the whole result, 
+you guessed it right, float
+
+Here's how you will check it:
+	>>>print(type(1+2.0+3))
+
+4. Which of the following is the valid variable name:
+i) global
+ii) 99flag
+iii) sum
+iv) an$wer
+
+Sol. 	i) global - No.If you were half awake in the class, or even just looked at the  previous pages
+	you will find that this key word is used to declare a variable globally.
+	Thus, its already defined in the python library, so not a valid variable name.
+	ii) 99flag - No. As the variable name starts with an integer or nymerical value. can't be considered
+	iii) sum - , interesting, it seems like a name which even shows the purpose of the variable.
+	So yes, it is a valid varibale name.
+	iv) an$wer- No man. why do you need special cases. You have 26 alphabets
+	and 10 numbers, they(people who work day and night in python) have spared enough space for you to use
+	these variables, dont do this to them.
+
+
+5. True or False
+Sol.
+i) Character Data type values should be delimited by using the single quote.
+	True, String and character means the same to python
+		eg >>> name = 'John Wick' or name = 'John Wick'.
+	Basically , string is combination of characters, so.... pyhton makes it really simple
+	by treating everything as the longest data type of certain variable.
+	Refer to this website for more information on this topic:
+		https://realpython.com/python-strings/
+
+ii) None is one of the data type in python
+	True,  look at the data type chart given in the chapter.
+	Functions which have no return in the end, they by default return 'NONE'.
+
+iii) The += operator is used to add the right hand side value to the left hand side
+variable.
+	True, eg:
+	>>>a,b = 2,2
+	>>>print(a+=b)
+	>>> #print(a(L.H.S)+=b(R.H.S))
+
+iv) The data type double is not a valid python data type.
+	True, when we input large values in the input.
+	We dont need to declare data type double in it, python automatically does that for us. 
+
+v) Python does not have any keywords.
+	False, are you kidding me.
+	Pyhton as well as any other living or dead language have keywords in it.
+	Eg, max(), len(), def, return, input() etc
+	
+vi) The equal to condition is written by using the == operator.
+	False, this is a symbol for comparison (0 == False). For equal to, you use assignment symbol eg 'A = 6'.
+
+6. Check all syntactically correct statements
+Sol.
+a) Which input statements are correct
+i) a = raw_input ( )
+ii) a = raw_input (“enter a number”) - True
+iii) a = raw_imput (enter your name)
+
+b) Which print statements are correct?
+i) _print “9” + “9”
+ii) _print int(“nine”)
+iii) _print 9+9
+iv) print 9 - True
+
+c) Which are correct arithmetical operations?
+i) a = 1*2 - True 
+ii) 2 = 1+1 - True
+iii) 5 + 6 = y 
+iv) Seven = 3 * 4
+
+d) Which are correct type conversions?
+i) int (7.0+0.1) - True
+ii) str (1.2 * 3.4) - True
+iii) float (“77”+“.0”) - True
+iv) str ( 9 / 0 )
+
+e) Which operations result in 8?
+i) 65 // 8 - True
+ii) 17 % 9 - True
+iii) 2 * * 4
+iv) 64 * * 0.5 (Its 8.0 not 8 so False)
+
+f) Which lines are commented?
+i) """This is a comment""" - True
+ii) # This is a comment - True
+iii) // this is a comment
+iv) '''This is a comment''' - True
+
+g) Find the matching pairs of expressions and values.
+i) 1023(int)
+ii) None(NoneType)
+iii) [2, 4, 8, 16](list)
+iv) True(boolean)
+v) 17.54(float)
+vi) („Roger‟, 1952) (Tuple)
+vii) “my fat cat” (str)
+
+7. MCQ
+Sol. 
+i) The __________ data type allows only True/False values
+a) bool b) boolean c) Boolean d) None
+>>> c) Boolean
+
+ii) If the value of a = 20 and b = 20, then a+=b will assign ________ to a
+a) 40 b) 30 c) 20 d) 10
+>>> a) 40
+
+iii) The ____________ operator is used to find out if division of two number
+yields any remainder
+a) / b) + c) % d) //
+>>> c) %
+
+8. When will following statement in interpreter result into error:
+>>> B+4
+Sol. One B is declared as any other data type than in or float.
+
+9. How can we change the value of 6*1-2 to -6 from 4?
+Sol. Paranthesis(BRACKETS), make the brackets go inside out.
+	>>>((6*1)-2) # current execution
+	>>>(6*(1-2)) # after changing the brackets location
+
+10. Is python case sensitive?
+Sol. 	>>> Yup
+
+11. What does „immutable‟ mean; which data type in python are immutable.
+Sol. 	Data types whcih cannot be changed
+	>>> String, Frozens Sets and Tuples
+
+12. Name four of Python‟s Basic data types? Why are they called so?
+Sol. Look at book, read a little
+
+13. What are relational operators? Explain with the help of examples.
+Sol. Operators having affairs.
+ 
+14. What is an integer?
+Sol. NO IDEA
+
+15. What is a variable? What names may variable have?
+Sol.  Which varies with time
+
+16. How are keywords different from variable names?
+Sol. One starts with k other with v
+
+17. Why are data types important?
+Sol. Because certain data types can perform certain actions.
+
+18. How can you convert a string to integer and when can it be used?
+Sol. Data casting, when the user might add int or float
+
+19. How can text be read from the keyboard?
+Sol. Like normal A, B, C, D, E......
+	>>>name = raw_input("What is your name? ")
+	>>>type(name)
+	>>> print(name)
+
+20. How are comments written in a program?
+Sol. #comment, 'comment', """comment""". 
+
+
+
+
+:::::::::::::::		::::		::::		::::                ::::
+:::::::::::::::		::::		::::		::::::              ::::
+::::			::::		::::		::::  ::            ::::
+::::			::::		::::		::::    ::          ::::
+:::::::::::::::		::::		::::		::::      ::        ::::
+:::::::::::::::		::::		::::		::::        ::      ::::
+::::			::::		::::		::::          ::    ::::
+::::			::::::::::::::::::::		::::            ::  ::::
+::::			::::::::::::::::::::		::::              ::::::
+::::			::::::::::::::::::::		::::                ::::
+
+
+
+
+				LAB EXERCISE
+
+
+1. Record what happens when following statements are executed:
+a) print n=7
+b) print 5+7
+c) print 5.2, “this”, 4-2, “that”, 5/2.0
+
+2. Use IDLE(Integrated Development and Learning Environment) to calculate:
+a) 6+4*10
+b) (6+4)*10
+
+3. Type following mathematical expression and record your observations:
+a) 2**500
+b) 1/0 - Zero Error
+
+4. What will be the output of the following code:
+a = 3 - 4 + 10
+b = 5 * 6
+c = 7.0/8.0
+print "These are the values:", a, b, c
+
+
+5. Write a code to show the use of all 6 math function.
+Sol. Simple way to do this is, first declare the name of the fuctions which will be used.
+	>>>Eg Add,Substract, Multiply, Division, Remainder and Exponential
+	Next, is the declare the corresponding operations which they will be performing
+>>>import math
+>>>a,b=3,4
+>>>Add = a+b
+>>>Substract = a-b
+>>>Multiply= a*b
+>>>Division=a/b
+>>>Remainder= a%b
+>>>Exponential= math.pow(a,b)
+>>>print("Addition:", Add)
+>>>print("Difference is:",Substract)
+>>>print("Multiplication is:", Multiply)
+>>>print("Division is:", Division)
+>>>print("Remainder is:", Remainder)
+>>>print("Exponential is:",Exponential)
+
+6. Write a code that prints your full name and your Birthday as separate strings.
+Sol.
+name= input("Enter your full name:")
+birth_date=input("Enter birthday:")
+print(name, birth_date)
+
+7. Write a program that asks two people for their names; stores the names in
+variables called name1 and name2; says hello to both of them.
+
+Sol.
+print("Are there two people out there")
+name1 = input("People no.1 enter your name:")
+name2 = input("People no.2 enter your name:")
+print("hey people")
+print("these are your name from now on")
+print("People 1:", name1)
+print("People 2:", name2)
+
+8. Calculate root of the following equation:
+a) 34x2 + 68x - 510
+b) 2x 2 - x -3 = 0
+
+Sol.
+
+from math import sqrt
+print("Enter value of variavbles in quadratic equation in teh form a,b &c")
+a=float(input("Enter value for a"))
+b=float(input("Enter value for b"))
+c=float(input("Enter value for c"))
+
+print("The equation you entered is: {0}*x^2 + {1}*x + {2}".format(a,b,c))
+
+val = pow(b,2)-4*a*c
+val=sqrt(val)
+#print(val)
+root1 = (-1*b+sqrt(val))/2*a
+root2 = (-1*b-sqrt(val))/2*a
+
+print("The roots are:",root1, root2)
